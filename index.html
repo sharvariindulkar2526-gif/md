@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Men's Day ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f8e8e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, serif;
+            padding: 25px;
+            color: #493333;
+        }
+
+        .container {
+            background: #fffdf7;
+            max-width: 900px;
+            width: 100%;
+            padding: 55px 35px;
+            border-radius: 35px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(100, 50, 50, 0.08);
+        }
+
+        .small-heading {
+            letter-spacing: 5px;
+            color: #9b7777;
+            font-size: 13px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 7vw, 72px);
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #d65d7b;
+        }
+
+        .intro {
+            font-size: 21px;
+            line-height: 1.8;
+            margin-bottom: 35px;
+        }
+
+        .photo-box {
+            margin: 25px auto 35px;
+            max-width: 420px;
+            background: #fff8f5;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .photo-box img {
+            width: 100%;
+            max-height: 420px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .caption {
+            font-style: italic;
+            margin-top: 15px;
+            font-size: 19px;
+            color: #876666;
+        }
+
+        .message {
+            font-size: 21px;
+            line-height: 1.8;
+            margin: 25px auto 35px;
+            max-width: 700px;
+        }
+
+        button {
+            background: #cc7184;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            padding: 18px 35px;
+            font-size: 17px;
+            cursor: pointer;
+            font-family: Georgia, serif;
+        }
+
+        button:hover {
+            background: #b95770;
+            transform: scale(1.04);
+        }
+
+        #surprise {
+            display: none;
+            margin-top: 30px;
+            font-size: 22px;
+            line-height: 1.8;
+            color: #b34f6b;
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-style: italic;
+            color: #987575;
+            font-size: 19px;
+        }
+
+        .heart {
+            position: fixed;
+            color: #d98799;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p class="small-heading">
+            A LITTLE SOMETHING FOR YOU
+        </p>
+
+        <h1>
+            Happy Men's <span>Day</span> ❤️
+        </h1>
+
+        <p class="intro">
+            To my favourite person, today is another reason
+            to remind you how special you are.
+        </p>
+
+         <div class="photo-box">
+            <img src="couple.jpeg.jpeg" alt="Our favourite picture">
+
+            <p class="caption">
+                My favourite kind of us ♡
+            </p>
+        </div>
+
+        <p class="message">
+            I hope you always know how much you mean to me.
+            Thank you for being you, for the little things,
+            the laughs and all the beautiful memories.
+            I am always cheering for you.
+        </p>
+
+        <button onclick="showSurprise()">
+            Open your little surprise ♡
+        </button>
+
+        <div id="surprise">
+            You are my favourite person, my happiness
+            and my forever favourite.
+            <br>
+            I love you so much! ❤️
+            <br>
+            Happy Men's Day, my love! 🥹
+        </div>
+
+        <p class="footer">
+            With all my love ♡
+        </p>
+
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
